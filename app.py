@@ -13,10 +13,12 @@ st.set_page_config(
 st.markdown("""
 <style>
 
+/* Main app background */
 .stApp {
-    background-color: #f4f7fb;
+    background-color: var(--background-color);
 }
 
+/* Sidebar */
 [data-testid="stSidebar"] {
     background-color: #0f172a;
 }
@@ -25,20 +27,45 @@ st.markdown("""
     color: white;
 }
 
-h1 {
-    color: #0f172a;
+/* Main headings - adapts to light/dark theme */
+h1, h2, h3 {
+    color: var(--text-color);
 }
 
+/* Normal text */
+.stMarkdown, .stText, p, label {
+    color: var(--text-color);
+}
+
+/* Buttons */
 .stButton > button {
     background-color: #2563eb;
     color: white;
     border-radius: 8px;
     border: none;
     padding: 10px 20px;
+    font-weight: 600;
 }
 
 .stButton > button:hover {
     background-color: #1d4ed8;
+    color: white;
+}
+
+/* Card service buttons */
+.card-service button {
+    width: 100%;
+    text-align: left;
+}
+
+/* Make inputs readable in dark mode */
+input, textarea {
+    color: var(--text-color) !important;
+}
+
+/* Select boxes */
+[data-baseweb="select"] {
+    color: var(--text-color);
 }
 
 </style>

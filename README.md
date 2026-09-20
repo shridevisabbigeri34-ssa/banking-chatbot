@@ -1,0 +1,1 @@
+A demo banking chatbot developed as a college project using Python and Streamlit. It simulates common banking services such as account balance, transactions, money transfers, card services, loan calculations, and customer support for educational and demonstration purposes.
